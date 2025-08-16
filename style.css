@@ -1,0 +1,238 @@
+/* General Styles */
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+  background-image: url('images/rm120batch2-techi-14-framebg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  margin: 0 100px; /* المسافة من طرف الصفحة */
+  justify-items: center; 
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #222;
+  color: #fff;
+}
+
+/* Home Intro */
+.home-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px; 
+  padding: 60px 20px;
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h2 {
+  font-size: 2.2em;
+}
+
+.intro-text p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.intro-text .btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #333;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.intro-text .btn:hover {
+  background: #555;
+}
+
+.intro-image {
+  flex: 1;
+  text-align: right;
+}
+
+.intro-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Projects Cards */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 15px;
+  text-align: center;
+  width: 250px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Skills Section with Icons and Description */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 0 100px; /* المسافة من طرف الصفحة */
+  justify-items: center; /* يحط الكروت بالوسط */
+}
+
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.skill-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.skill-name {
+  font-weight: bold;
+  text-align: center;
+}
+
+.skill-desc {
+  font-size: 0.9em;
+  text-align: center;
+  color: #555;
+}
+
+/* Contact Form */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  backdrop-filter: blur(5px);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  margin-bottom: 15px;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #555;
+}
+
+#formMsg {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1em;
+}
+
+/* About Section Container */
+.about-container {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.section-title {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Typed effect */
+.typed {
+  font-size: 1.2em;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.page-icon {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+label{
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
